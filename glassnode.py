@@ -3,11 +3,13 @@ import requests
 import datetime
 import iso8601
 import pandas as pd
-
+import os
 class GlassnodeClient:
 
   def __init__(self):
-    self._api_key = ''
+    self._api_key = os.environ.get("GLASSNODE_API_KEY")
+    if self._api_key == None:
+        os.environ["GLASSNODE_API_KEY"] = input("api_key not found, please enter api_key: ")
 
   @property
   def api_key(self):
