@@ -6,8 +6,8 @@ The official Python client library for Glassnode's API – https://docs.glassnod
 ### API Key
 
 You can get your API from your [Glassnode account](https://studio.glassnode.com/settings/api).
-
-You can add you API key your environment variables by running:
+You can add your API key also from within the program.
+You can add your API key your environment variables by running:
 
 `export GLASSNODE_API_KEY=<YOUR-KEY>`
 
