@@ -8,7 +8,7 @@ class GlassnodeClient:
 
   def __init__(self):
     self._api_key = os.environ.get("GLASSNODE_API_KEY")
-    if self._api_key == None:
+    if self._api_key == None | self._api_key == "":
         os.environ["GLASSNODE_API_KEY"] = input("api_key not found, please enter api_key: ")
 
   @property
