@@ -13,6 +13,7 @@ You can add your API key your environment variables by running:
 You can also add your API key  from within the glassnode API python client.
 
 ### Example Usage
+api options can now be called with api_items and indexes can be  passed to get method as url parameter
 
 Instantiate the Glassnode client:
 
